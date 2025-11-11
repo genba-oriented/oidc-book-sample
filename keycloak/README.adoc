@@ -1,0 +1,11 @@
+= サンプルプログラム用のKeycloakの設定
+
+Keycloakの設定は、書籍の内容に従って行うこともできますが、設定済みのKeycloakを使用したい場合は以下の手順を行ってください。
+
+* Keycloakバージョン26.3.3のZIPファイルをダウンロードし、解凍します。
++
+https://www.keycloak.org/archive/downloads-26.3.3.html
+
+* 解凍後の「keycloak-26.3.3」ディレクトリ配下に、本リポジトリの「data」ディレクトリをコピーします。
+
+* run-with-import.bat を実行します。

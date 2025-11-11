@@ -1,0 +1,19 @@
+= クライアントクレデンシャルフローのプログラム
+
+== 環境準備
+* Java 17以上をインストールしてください。
+* Keycloakを起動してください。Keyclaokの起動方法は、書籍もしくは上位階層の「keycloak」ディレクトリをご参照ください。
+* APIサーバを起動してください。APIサーバの起動方法は、上位階層の「api」ディレクトリをご参照ください。
+
+== 実行方法
+* ビルド
++
+....
+mvnw clean package
+....
+
+* 実行
++
+....
+java -jar target\oidc-book-sample-batch-0.0.1-SNAPSHOT.jar
+.... 

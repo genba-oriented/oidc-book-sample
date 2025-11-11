@@ -1,0 +1,25 @@
+{
+  "name": "oidc-book-sample-bff",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-openid-connect": "^2.19.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.2.3",
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

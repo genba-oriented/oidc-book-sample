@@ -1,0 +1,25 @@
+{
+  "name": "oidc-book-sample-spa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-oidc-context": "^3.3.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.2.3",
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@types/node": "^22.13.1",
+    "@types/express": "^5.0.2",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
