@@ -106,7 +106,7 @@ fun AfterLogin(model: MainActivityViewModel, userName: String, startLogout: () -
   LaunchedEffect(Unit) {
     model.fetchOrderItems()
   }
-  val orderItmems: List<OrderItem> by model.orderItemsState.collectAsState()
+  val orderItems: List<OrderItem> by model.orderItemsState.collectAsState()
   Text(
     text = "こんにちは" + userName + "さん",
     style = MaterialTheme.typography.bodyLarge
@@ -120,8 +120,8 @@ fun AfterLogin(model: MainActivityViewModel, userName: String, startLogout: () -
         Text(text = "値段", Modifier.weight(.25f))
       }
     }
-    items(orderItmems.size) { idx ->
-      val orderItem = orderItmems.get(idx)
+    items(orderItems.size) { idx ->
+      val orderItem = orderItems.get(idx)
       Row {
         Text(text = orderItem.id(), Modifier.weight(.25f))
         Text(text = orderItem.productName(), Modifier.weight(.25f))
