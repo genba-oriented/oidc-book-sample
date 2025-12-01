@@ -55,7 +55,7 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
     });
   }
 
-  fun fetchOrderItmes() {
+  fun fetchOrderItems() {
     this.oidcClient
       .performWithRefreshedAccessToken { accessToken ->
         val client = OkHttpClient()

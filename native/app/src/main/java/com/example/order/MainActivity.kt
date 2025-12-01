@@ -104,7 +104,7 @@ fun BeforeLogin(startLogin: () -> Unit) {
 @Composable
 fun AfterLogin(model: MainActivityViewModel, userName: String, startLogout: () -> Unit) {
   LaunchedEffect(Unit) {
-    model.fetchOrderItmes()
+    model.fetchOrderItems()
   }
   val orderItmems: List<OrderItem> by model.orderItemsState.collectAsState()
   Text(
