@@ -12,7 +12,7 @@ app.use(auth({
   secret: "secret-for-session",
   authorizationParams: {
     response_type: 'code',
-    scope: "openid",
+    scope: "openid"
   },
   idpLogout: true,
 }));
@@ -30,7 +30,6 @@ app.get("/me", (req: Request, res: Response) => {
 });
 
 app.get("/api/order-items", async (req: Request, res: Response) => {
-  console.log(req.oidc.refreshToken);
   let { access_token, isExpired, refresh } = req.oidc.accessToken;
   if (isExpired()) {
     console.log("refreshing access token");
