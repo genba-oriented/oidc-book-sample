@@ -1,13 +1,37 @@
 = Clientがネイティブアプリの認可コードフローのプログラム
 
-== 環境準備
-* 最新のAndroid Studioをインストールしてください。
-+
-https://developer.android.com/studio
+Clientが、Android のネイティブアプリの認可コードフローのサンプルプログラムです。
 
-* Keycloakを起動してください。Keyclaokの起動方法は、書籍もしくは上位階層の「keycloak」ディレクトリをご参照ください。
-* APIサーバを起動してください。APIサーバの起動方法は、上位階層の「api」ディレクトリをご参照ください。
+== 前提条件
 
-== 実行方法
-* 本ディレクトリをAndroid Studioで開きます。
-* Androidエミュレータでアプリケーションを実行します。
+[cols="1,2", options="header"]
+|===
+| 項目 | 要件
+
+| Android Studio
+| 最新版を推奨
+
+| Keycloak
+| 起動済みであること
+
+| API サーバ
+| 起動済みであること
+|===
+
+[NOTE]
+====
+* Android Studio のダウンロード → https://developer.android.com/studio
+* Keycloak の起動方法 → link:../keycloak/README.adoc[keycloak/README.adoc]
+* API サーバの起動方法 → link:../api/README.adoc[api/README.adoc]
+====
+
+== 実行手順
+
+=== 1. プロジェクトを開く
+
+Android Studio を起動し、本ディレクトリをプロジェクトとして開きます。
+
+=== 2. アプリケーションの実行
+
+Android エミュレータで実行します。
+

@@ -1,21 +1,44 @@
-= 「OpenID Connect 入門（技術評論社）」のサンプルプログラム
+= 「OpenID Connect 入門」サンプルプログラム
 
-本リポジトリは、書籍「OpenID Connect 入門（技術評論社）」に掲載されているサンプルプログラムのリポジトリです。
+本リポジトリは、書籍「**OpenID Connect 入門（技術評論社）**」に掲載されているサンプルプログラムを収録しています。
 
-各ディレクトリには、以下が格納されています。
+== ディレクトリ構成
 
+[cols="1,3", options="header"]
 |===
-| ディレクトリ名 | 内容
+| ディレクトリ | 内容
 
-|spa|ClientがSPAの認可コードフローのプログラム
-|bff|ClientがBFFの認可コードフローのプログラム
-|native|Clientがネイティブアプリの認可コードフローのプログラム
-|batch|クライアントクレデンシャルフローのプログラム
-|api|上記のプログラムが呼び出しているAPIサーバのプログラム
-|keycloak|Keycloakを動かすための手順とデータ
+| link:spa/[spa]
+| Client が SPA の認可コードフロー
+
+| link:bff/[bff]
+| Client が BFF の認可コードフロー
+
+| link:native/[native]
+| Client がネイティブアプリの認可コードフロー
+
+| link:batch/[batch]
+| クライアントクレデンシャルフロー
+
+| link:api/[api]
+| 上記プログラムが呼び出す API サーバ
+
+| link:keycloak/[keycloak]
+| Keycloak の起動手順と設定データ
 |===
 
-詳細は各ディレクトリ内の「README.adoc」をご参照ください。
+== クイックスタート
+
+各サンプルを動かすには、以下の順序で起動してください。
+
+. **Keycloak を起動** → link:keycloak/README.adoc[keycloak/README.adoc] を参照
+. **API サーバを起動** → link:api/README.adoc[api/README.adoc] を参照
+. **各クライアントを起動** → 各ディレクトリ（spa、bff、native、batch）の README.adoc を参照
 
 
+== 動作環境
 
+* Java 17 以上
+* Node.js（最新の LTS 版を推奨）
+* Android Studio（ネイティブアプリの場合）
+* Keycloak 26.3.3

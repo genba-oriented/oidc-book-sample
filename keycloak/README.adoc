@@ -1,11 +1,59 @@
-= サンプルプログラム用のKeycloakの設定
+= Keycloak セットアップ
 
-Keycloakの設定は、書籍の内容に従って行うこともできますが、設定済みのKeycloakを使用したい場合は以下の手順を行ってください。
+サンプルプログラム用の Keycloak の設定手順です。
 
-* Keycloakバージョン26.3.3のZIPファイルをダウンロードし、解凍します。
-+
+== セットアップ方法
+
+Keycloak の設定は、以下の2つの方法から選択できます。
+
+[cols="1,2", options="header"]
+|===
+| 方法 | 説明
+
+| 書籍の手順に従う
+| 書籍に記載された手順で手動設定
+
+| 設定済みデータを使用
+| 本リポジトリの設定データをインポート
+|===
+
+== 設定済みデータを使用する場合
+
+=== 1. Keycloak のダウンロード
+
+Keycloak バージョン 26.3.3 の ZIP ファイルをダウンロードし、解凍します。
+
 https://www.keycloak.org/archive/downloads-26.3.3.html
 
-* 解凍後の「keycloak-26.3.3」ディレクトリ配下に、本リポジトリの「data」ディレクトリをコピーします。
+=== 2. データディレクトリのコピー
 
-* run-with-import.bat を実行します。
+解凍後の `keycloak-26.3.3` ディレクトリ配下に、本リポジトリの `data` ディレクトリをコピーします。
+
+[source]
+----
+keycloak-26.3.3/
+├── bin/
+├── conf/
+├── data/          ← ここにコピー
+├── lib/
+└── ...
+----
+
+=== 3. Keycloak の起動
+
+`run-with-import.bat` を実行します。
+
+[source,bash]
+----
+run-with-import.bat
+----
+
+=== 4. 管理コンソールにアクセス
+
+Keycloakが起動したら、以下の URL にアクセスしてください。
+
+----
+http://localhost:18080
+----
+
+ログインID/パスワードは、「admin/admin」です。

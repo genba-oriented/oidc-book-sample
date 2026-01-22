@@ -1,30 +1,51 @@
 = ClientがBFFの認可コードフローのプログラム
 
-== 環境準備
+ClientがBFF（Backend for Frontend）の認可コードフローのサンプルプログラムです。
 
-* 最新のNode.jsをインストールしてください。
-+
-https://nodejs.org/ja/download
+== 前提条件
 
-* Keycloakを起動してください。Keyclaokの起動方法は、書籍もしくは上位階層の「keycloak」ディレクトリをご参照ください。
-* APIサーバを起動してください。APIサーバの起動方法は、上位階層の「api」ディレクトリをご参照ください。
+[cols="1,2", options="header"]
+|===
+| 項目 | 要件
 
-== 実行方法
-* ライブラリのインストール
-+
-....
+| Node.js
+| 最新の LTS 版を推奨
+
+| Keycloak
+| 起動済みであること
+
+| API サーバ
+| 起動済みであること
+|===
+
+[NOTE]
+====
+* Node.js のダウンロード → https://nodejs.org/ja/download
+* Keycloak の起動方法 → link:../keycloak/README.adoc[keycloak/README.adoc]
+* API サーバの起動方法 → link:../api/README.adoc[api/README.adoc]
+====
+
+== 実行手順
+
+=== 1. ライブラリのインストール
+
+[source,bash]
+----
 npm install
-....
+----
 
-* アプリケーションの実行
-+
-....
+=== 2. アプリケーションの起動
+
+[source,bash]
+----
 npm run dev
-....
+----
 
-* ブラウザで以下にアクセス
-+
-....
+=== 3. ブラウザでアクセス
+
+アプリケーションが起動したら、以下の URL にアクセスしてください。
+
+----
 http://localhost:3000
-....
+----
 
